@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  webserver_main:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    image: myapp/nginx
+    container_name: webserver_main
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../code:/data/app
