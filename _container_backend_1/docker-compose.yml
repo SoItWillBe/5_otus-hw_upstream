@@ -26,7 +26,7 @@ services:
     container_name: webserver_b1
     # проброс портов
     ports:
-      - "8310:80"
+      - "80:80"
     volumes:
       - ../code:/data/app
     networks:
